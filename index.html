@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Mbangela Lihle</title>
+</head>
+<body class="bg-gray-100">
+    <header class="flex justify-end nav-bar shadow-sm bg-white h-16 z-30">
+        <button id="open-close-nav" onClick="navBtn();" data-aos="zoom-in" class="lg:hidden"></button>
+        <a href="#footer-contact" class="">
+            <input data-aos="zoom-in" data-aos-duration="1000" class="hidden lg:block rounded-full text-gray-900 text-lg py-2 px-8 bg-orange-300 
+            hover:bg-orange-200 border-2 border-gray-900 cursor-pointer self-center mr-64 my-2 font-bold" type="button" value="Get in touch">
+        </a>
+    </header>
+    <div class="hero grid grid-cols-1 bg-gray-900 pt-8  lg:grid-cols-2 h-auto pt-8 pb-6 lg:pt-64">
+        <div class="rounded-lg border mx-8 md:w-7/12 md:mx-auto 
+        lg:w-3/4 lg:mb-20 lg:ml-auto lg:mr-10 xl:w-1/2 xl:mb-16 ">
+            <img  class="rounded-lg w-full h-full object-cover" src="./src/img/lee.png" alt="">
+        </div>
+        <div class="md:mx-auto xl:mx-0">
+            <div data-aos="fade-up" data-aos-duration="1000"
+                class="text-gray-100 mx-8 mt-6 max-w-xl">
+                <p id="full-name" class="text-4xl font-hairline lg:text-5xl xl:text-6xl"></p>
+                <p id="job-title" class="text-3xl font-bold lg:text-4xl xl:text-5xl"></p>
+                <p id="about-me" class="text-lg font-hairline  lg:text-xl xl:text-2xl"></p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000"
+                class="flex mx-6 my-8">
+                <ul class="flex flex-wrap">
+                    <li class="mx-2 mt-2 mb-4">
+                        <a href="#footer-contact" >
+                            <input class="text-gray-100 text-lg py-2 px-6 rounded bg-orange-400 hover:bg-orange-500 border cursor-pointer" type="button" value="CONTACT ME">
+                        </a>
+                    </li>
+                    <li class="mx-2 mt-2 mb-4">
+                        <a href="#portfolio-section">
+                            <input class="font-hairline text-gray-100 text-lg py-2 px-6 rounded bg-transparent hover:bg-orange-400 border cursor-pointer" type="button" value="SEE MY WORK">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="mt-12">
+        <div class="text-center">
+            <p class="text-3xl font-semibold text-center text-gray-700">MY STACK</p>
+            <p class="text-xl font-hairline">Although I enjoy learning a number of things, these are the languages and tech I specialize in: </p>
+        </div>
+        <div class="my-8 px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 font-semibold">
+            <div data-aos="flip-up" data-aos-duration="1000" class="border border-b-2 my-6 mx-2">
+                <div class="bg-white py-2">
+                    <img src="./src/svg/terminal-window.svg" class="h-8 w-8 ml-12 mr-auto" alt="">
+                </div>
+                <ul class="ml-8 mr-auto my-8">
+                    <li>LINUX</li>
+                    <li>APACHE</li>
+                    <li>MYSQL</li>
+                    <li>PHP</li>
+                </ul>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000" class="border border-b-2 my-6 mx-2">
+                <div class="bg-white py-2">
+                    <img src="./src/svg/tags.svg" class="h-8 w-8 ml-12 mr-auto" alt="">
+                </div>
+                <ul class="ml-8 mr-auto my-8">
+                    <li>JAVASCRIPT</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>SASS</li>
+                </ul>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000" class="border border-b-2 my-6 mx-2">
+                <div class="bg-white py-2">
+                    <img src="./src/svg/braces.svg" class="h-8 w-8 ml-12 mr-auto" alt="">
+                </div>
+                <ul class="ml-8 mr-auto my-8">
+                    <li>LARAVEL</li>
+                    <li>TAILWINDCSS</li>
+                    <li>BOOTSTRAP 4</li>
+                    <li>JQUERY</li>
+                </ul>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="1000" class="border border-b-2 my-6 mx-2">
+                <div class="bg-white py-2">
+                    <img src="./src/svg/terminal.svg" class="h-8 w-8 ml-12 mr-auto" alt="">
+                </div>
+                <ul class="ml-8 mr-auto my-8">
+                    <li>GIT</li>
+                    <li>AGILE</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio-section" class="bg-gray-900 mb-12 h-auto px-2 pb-10">
+        <div class="text-center text-gray-100 pb-6 pt-10 mx-6">
+            <p class="text-3xl font-semibold text-center text-gray-100">PORTFOLIO</p>
+            <p class="text-xl font-hairline">These are some of the recent projects I have done:</p>
+        </div>
+        <div class="flex flex-wrap md:flex-no-wrap justify-center mx-auto">
+            <div class="border my-6 mx-2 max-w-lg">
+                <img src="./src/img/covid-19-webside-screen-grab.png" alt="">
+                <p class="font-hairline text-gray-100 mx-6 text-xl">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ipsa dicta omnis nemo,
+                    perspiciatis exercitationem ducimus obcaecati tenetur quas sed repellat architecto explicabo
+                    provident in deleniti reprehenderit rem quisquam excepturi?
+                </p>
+                <a href="https://covid19worldstatistics.herokuapp.com" target="_blank">
+                    <button data-aos="flip-left" data-aos-duration="2000" data-aos-easing="ease-out-cubic"
+                    class="text-orange-400 font-hairline border border-orange-400 bg-transparent ml-6 mr-auto py-1 pl-4 pr-12 my-4 hover:bg-orange-300">
+                        View live
+                    </button>
+                </a>
+            </div>
+            <div class="border my-6 mx-2 max-w-lg">
+                <img src="./src/img/khayadevelopers-screen-grab.png" alt="">
+                <p class="font-hairline text-gray-100 mx-6 text-xl">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ipsa dicta omnis nemo,
+                    perspiciatis exercitationem ducimus obcaecati tenetur quas sed repellat architecto explicabo
+                    provident in deleniti reprehenderit rem quisquam excepturi?
+                </p>
+                <a href="https://khayadevelopers.co.za" target="_blank">
+                    <button data-aos="flip-left" data-aos-duration="2000" data-aos-easing="ease-out-cubic"
+                    class="text-orange-400  border border-orange-400 bg-transparent ml-6 mr-auto py-1 pl-4 pr-12 my-4 hover:bg-orange-300">
+                        View live
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="footer-contact" class="flex bg-gray-400 mt-0">
+        <div class="mx-auto my-12 xl:mx-64">
+            <ul>
+                <li class="flex flex-wrap text-xl font-hairline mt-2">
+                    <img src="./src/svg/github-fill.svg" class="h-8 w-8" alt="">
+                    <p class="ml-4 mr-auto">@lmbangel</p>
+                </li>
+                <li class="flex flex-wrap text-xl font-hairline mt-2">
+                    <img src="./src/svg/linked-in-fill.svg" class="h-8 w-8" alt="">
+                   <p class="ml-4 mr-auto">@LihleMbangela </p>
+                </li>
+                <li class="flex flex-wrap text-xl font-hairline mt-2">
+                    <img src="./src/svg/mail-send-fill.svg" class="h-8 w-8" alt="">
+                    <p class="ml-4 mr-auto">mbangelalihle@gmail.com</p>
+                
+                </li>
+                <li class="flex flex-wrap text-xl font-hairline mt-2">
+                    <img src="./src/svg/phone-fill.svg" class="h-8 w-8" alt="">
+                    <p class="ml-4 mr-auto"> (+27) 78 573 5974 </p>
+                </li>
+            </ul>
+        </div>
+        <!-- <div class="hidden lg:flex justify-center items-center h-12 w-2/6 rounded-full bg-gray-500 self-end my-12 float-right">
+            <div class="w-full"> 
+                <input class="rounded-full h-10 w-4/5 px-6 focus:outline-none mx-1 border bg-transparent border-r-0 " type="text" name="" id="">
+                <a href="#javascript:;">
+                    <button class="text-gray-100 float-right rounded-full bg-blue-800 px-8 py-2 mx-1 my-auto">Send</button>
+                </a>
+            </div>
+        </div> -->
+    </div>
+    <div id="footer-copyright"class="bg-gray-800 h-24 flex flex-wrap md:flex-no-wrap justify-center px-4 py-6">
+        <div class="text-center">
+            <p class="text-2xm font-semibold italic text-gray-100">@2020 Mbangela Lihle. Rights Reserved</p>
+            <p class="text-sm font-hairline text-gray-100">The source code to this portfolio is available on my github - click on the github icon to view the repository</p>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+    <script src="./js/particles-animation.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script> 
+</body>
+</html>
