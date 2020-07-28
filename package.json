@@ -11,7 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tailwindcss": "^1.5.2"
+    "tailwindcss": "^1.5.2",
+    "tsparticles": "^1.17.5"
   },
   "devDependencies": {
     "aos": "^3.0.0-beta.6"

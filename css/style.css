@@ -17893,6 +17893,13 @@ html{
   min-height: 70vh;
 }
 
+#tsparticles {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -87048,3 +87055,4 @@ html{
     transition-delay: 1000ms;
   }
 }
+  
