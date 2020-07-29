@@ -11,6 +11,12 @@ html{
     position: sticky;
     top: 0;
 }
+#nav-mobile{
+    background-color: rgba(0, 70, 117, 0.6);
+}
+.nav-item:hover{
+    text-shadow: whitesmoke;
+}
 .hero{
     min-height: 70vh;
 }

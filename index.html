@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.17.0-beta.7/dist/tsparticles.min.js"></script>
- 
     <title>Mbangela Lihle</title>
 </head>
 <body class="bg-gray-100">
-    <header class="flex justify-end nav-bar shadow-sm bg-white h-16 z-30">
-        <button id="open-close-nav" onClick="navBtn();" data-aos="zoom-in" class="lg:hidden"></button>
-        <a href="#footer-contact" class="">
-            <input data-aos="zoom-in" data-aos-duration="1000" class="hidden lg:block rounded-full text-gray-900 text-lg py-2 px-8 bg-orange-300 
-            hover:bg-orange-200 border-2 border-gray-900 cursor-pointer self-center mr-64 my-2 font-bold" type="button" value="Get in touch">
-        </a>
-    </header>
+    <div class="nav-bar z-30">
+        <header class="flex justify-end shadow-sm bg-white h-16 ">
+
+            <button id="open-close-nav" onClick="navBtn();" data-aos="zoom-in" class="lg:hidden ml-auto mr-0"></button>
+            <a href="#footer-contact" class="">
+                <input data-aos="zoom-in" data-aos-duration="1000" class="hidden lg:block rounded-full text-gray-900 text-lg py-1 px-8 bg-orange-300 
+                hover:bg-orange-200 border-2 border-gray-900 cursor-pointer self-center mr-64 my-3 font-bold" type="button" value="Get in touch">
+            </a>    
+        </header>
+        <div id="nav-mobile" class="w-full"></div>
+    </div>
+
     <div id="hero" class="hero grid grid-cols-1 bg-gray-900  lg:grid-cols-2 h-auto pt-8 pb-6 lg:pt-32">
         <div class="rounded-lg border mx-8 md:w-7/12 md:mx-auto 
         lg:w-3/4 lg:mb-20 lg:ml-auto lg:mr-10 xl:w-1/2 xl:mb-16">
@@ -25,8 +28,8 @@
         <div class="md:mx-auto xl:mx-0">
             <div data-aos="fade-up" data-aos-duration="1000"
                 class="text-gray-100 mx-8 mt-6 max-w-xl">
-                <p id="full-name" class="text-4xl font-hairline lg:text-5xl xl:text-6xl"></p>
-                <p id="job-title" class="text-3xl font-bold lg:text-4xl xl:text-5xl"></p>
+                <p id="full-name" class="text-4xl font-hairline lg:text-5xl 2xl:text-6xl"></p>
+                <p id="job-title" class="text-3xl font-bold lg:text-4xl 2xl:text-5xl"></p>
                 <p id="about-me" class="text-lg font-hairline  lg:text-xl xl:text-2xl"></p>
             </div>
             <div data-aos="fade-up" data-aos-duration="2000"
@@ -103,11 +106,11 @@
         </div>
         <div class="flex flex-wrap md:flex-no-wrap justify-center mx-auto">
             <div class="border my-6 mx-2 max-w-lg">
-                <img src="./src/img/covid-19-webside-screen-grab.png" alt="">
+                <img src="./src/img/covid-19-webside-screen-grab.png" alt="Covid-19 world stats website thumbnail">
                 <p class="font-hairline text-gray-100 mx-6 text-xl">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ipsa dicta omnis nemo,
-                    perspiciatis exercitationem ducimus obcaecati tenetur quas sed repellat architecto explicabo
-                    provident in deleniti reprehenderit rem quisquam excepturi?
+                   <strong>#Covid-19-World-Stats</strong><br>
+                    This website shows the updated daily stats for Covid-19 cases in every country.
+                    It also offers safety tips as suggested by the World Health Organization. 
                 </p>
                 <a href="https://covid19worldstatistics.herokuapp.com" target="_blank">
                     <button data-aos="flip-left" data-aos-duration="2000" data-aos-easing="ease-out-cubic"
@@ -117,11 +120,10 @@
                 </a>
             </div>
             <div class="border my-6 mx-2 max-w-lg">
-                <img src="./src/img/khayadevelopers-screen-grab.png" alt="">
-                <p class="font-hairline text-gray-100 mx-6 text-xl">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ipsa dicta omnis nemo,
-                    perspiciatis exercitationem ducimus obcaecati tenetur quas sed repellat architecto explicabo
-                    provident in deleniti reprehenderit rem quisquam excepturi?
+                <img src="./src/img/khayadevelopers-screen-grab.png" alt="Khayalami developers website thumbnail">
+                <p class="font-hairline text-gray-100 mx-6 mt-4 text-xl">
+                    <strong>#Khayalami-developers</strong><br>
+                    This is a responsive landing page for a small construction company
                 </p>
                 <a href="https://khayadevelopers.co.za" target="_blank">
                     <button data-aos="flip-left" data-aos-duration="2000" data-aos-easing="ease-out-cubic"
