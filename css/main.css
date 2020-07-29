@@ -13,6 +13,8 @@ html{
 }
 #nav-mobile{
     background-color: rgba(0, 70, 117, 0.6);
+    box-shadow: 0 5px 5px -5px rgb(31, 36, 80) inset;
+  
 }
 .nav-item:hover{
     text-shadow: whitesmoke;
